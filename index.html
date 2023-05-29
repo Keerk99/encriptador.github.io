@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Antony Huaman">
+    <link rel="stylesheet" href="resources/style.css">
+    <link rel="icon" href="resources/img/logo.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/622f040033.js" crossorigin="anonymous"></script>
+    <title>Ecriptador-Alura</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo_container">
+            <a href="index.html"><img class="logo" src="resources/img/logo.png" alt=""></a>
+        </div>
+    </header>
+
+    <main class="principal">
+        <div class="container">
+            <section class="escribir">
+                <div class="texto">
+                    <textarea class="caja_texto" name="" id="texto_encriptar" onkeydown="validarTecla(event)" cols="30"
+                        rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                </div>
+                <div class="botones">
+                    <div class="consejo">
+                        <img src="resources/img/exclamacion.png" alt="Mensaje de recomendacion">
+                        <p>Solo letras minísculas y sin acentos</p>
+                    </div>
+                    <div class="boton_container">
+                        <button class="boton1" onclick="encriptar()">Encriptar</button>
+                        <button class="boton2" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="desencriptar_container">
+                <div class="resultado" id="resultado_modal">
+                    <textarea class="texto_encriptado" name="" id="resultado_texto" cols="30" rows="10"
+                        readonly></textarea>
+                    <button class="boton3" id="copiar" onclick="copiarTexto()">Copiar</button>
+                </div>
+                <div class="sin_texto" id="sin_texto_modal">
+                    <img class="img-r" src="resources/img/muñeco.png" alt="Imagen de busqueda de resultado">
+                    <p class="mensaje1">Ningun mensaje fue encontrado</p>
+                    <p class="mensaje2">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contenedor_footer">
+            <div class="derechos">
+                <p class="copyright">&copy Copyright Encriptador Alura - 2023</p>
+            </div>
+            <div class="enlaces_container">
+                <ul class="enlaces">
+                    <li><a href="https://www.linkedin.com/m/in/keerk99" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/Keerk99" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
